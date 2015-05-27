@@ -302,7 +302,9 @@ th {
 
 }
 
-.slidesjs-previous:hover {
+.slidesjs-previous:hover, 
+.slidesjs-previous:active, 
+.slidesjs-previous:focus  {
 	color:transparent;
 	background: url('img/previous-hover.png') no-repeat;
   	width: 100px;
@@ -310,7 +312,9 @@ th {
 
 }
 
-.slidesjs-next:hover {
+.slidesjs-next:hover, 
+.slidesjs-next:active, 
+.slidesjs-next:focus  {
 	color:transparent;
 	background: url('img/next-hover.png') no-repeat;
   	width: 100px;
