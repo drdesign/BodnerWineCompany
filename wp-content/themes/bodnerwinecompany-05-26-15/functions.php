@@ -13,6 +13,15 @@ if ( ! function_exists( 'bodnerwinecompany_05_26_15_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+	load_template(get_template_directory() . '/customPost.php');
+
+	$custom_post = new PaintedCloud\WP\Classes\CustomPost('bodnerwinecompany-05-26-15');
+
+	$custom_post->make('slider', 'Slider', 'Sliders');
+
+
+
 function bodnerwinecompany_05_26_15_setup() {
 
 	/*
@@ -67,6 +76,8 @@ function bodnerwinecompany_05_26_15_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+
 }
 endif; // bodnerwinecompany_05_26_15_setup
 add_action( 'after_setup_theme', 'bodnerwinecompany_05_26_15_setup' );
