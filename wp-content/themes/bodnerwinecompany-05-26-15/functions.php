@@ -111,6 +111,10 @@ function bodnerwinecompany_05_26_15_scripts() {
 
 	wp_enqueue_script( 'bodnerwinecompany-05-26-15-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'bodnerwinecompany-05-26-15-custom', get_template_directory_uri() . '/js/custom.js', array(), '20140115', true );
+
+	wp_enqueue_script( 'bodnerwinecompany-05-26-15-jquery.slides.min.js', get_template_directory_uri() . '/js/jquery.slides.min.js', array(), '20150115', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
