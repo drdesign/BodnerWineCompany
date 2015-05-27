@@ -14,6 +14,18 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+</script>
+
 <?php wp_head(); ?>
 </head>
 
