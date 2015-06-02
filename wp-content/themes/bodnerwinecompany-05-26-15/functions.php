@@ -14,13 +14,6 @@ if ( ! function_exists( 'bodnerwinecompany_05_26_15_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 
-	load_template(get_template_directory() . '/customPost.php');
-
-	$custom_post = new PaintedCloud\WP\Classes\CustomPost('bodnerwinecompany-05-26-15');
-
-	$custom_post->make('slider', 'Slider', 'Sliders');
-
-
 
 function bodnerwinecompany_05_26_15_setup() {
 
