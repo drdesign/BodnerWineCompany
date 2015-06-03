@@ -205,12 +205,14 @@ th {
   width: 100%; }
 
 .wrapper {
-  width: 1027px;
-  margin: 0px auto;
-  padding: 0px 25px 0px 25px; }
+  width: 1200px;
+  height: 100%;
+  margin: 60px auto;
+  padding: 0 45px 0 45px;
+  position: relative;
+  background-color: #ffffff; }
 
 .site-title {
-  background: url("img/bodnerWineCompanyLogo.png") no-repeat center center;
   height: 351px;
   width: 100%;
   text-indent: -9999px;
@@ -223,67 +225,46 @@ th {
   color: #8DCCBF;
   text-indent: -9999px; }
 
-.main-navigation {
-  margin-top: -75px;
-  margin-left: 178px; }
+.header-image-container {
+  height: 293px;
+  margin: auto 0;
+  position: relative; }
+
+#header-image {
+  text-align: center;
+  padding-top: 25px; }
+
+#nav-outer {
+  width: 100%;
+  height: 100px; }
+
+.nav-table {
+  min-width: 100%;
+  padding-top: 95px; }
+
+.hero-header {
+  height: 275px; }
+
+#hero-frame {
+  position: absolute;
+  z-index: 0;
+  left: 26px;
+  top: 227px;
+  width: 1160px; }
+
+img#hero-frame {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
-#slides {
-  display: none; }
+.slider-wrapper {
+  margin: 20px 20px 20px 20px; }
 
 .slider-border {
-  background: url("img/slider_border.png") no-repeat center center;
-  width: 1027px;
-  height: 565px;
-  position: absolute;
-  z-index: 50;
-  margin: -17px -29px; }
-
-.slider-img-1, .slider-img-2, .slider-img-3, .slider-img-4, .slider-img-5 {
-  margin-top: -19px;
-  width: 100%;
-  height: 100%; }
-
-.slider-img-1 {
-  background: url("img/slider-img-1.png") no-repeat center center; }
-
-.slidesjs-previous,
-.slidesjs-previous:active,
-.slidesjs-previous:focus {
-  position: absolute;
-  margin-top: -332px;
-  margin-left: 3px;
-  z-index: 100;
-  color: transparent;
-  background: url("img/previous.png") no-repeat;
-  width: 100px;
-  height: 100px; }
-
-.slidesjs-next,
-.slidesjs-next:active,
-.slidesjs-next:focus {
-  position: absolute;
-  margin-top: -332px;
-  margin-left: 871px;
-  z-index: 100;
-  color: transparent;
-  background: url("img/next.png") no-repeat;
-  width: 100px;
-  height: 100px; }
-
-.slidesjs-previous:hover {
-  color: transparent;
-  background: url("img/previous-hover.png") no-repeat;
-  width: 100px;
-  height: 100px; }
-
-.slidesjs-next:hover {
-  color: transparent;
-  background: url("img/next-hover.png") no-repeat;
-  width: 100px;
-  height: 100px; }
+  width: 1124px;
+  height: 665px;
+  position: relative; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -428,7 +409,6 @@ nav {
   padding: 0px 0px 25px 0px; }
 
 .header-bg {
-  background-color: #ffffff;
   height: 330px; }
 
 /*--------------------------------------------------------------
@@ -466,15 +446,17 @@ a:active {
   width: 100%; }
 
 .main-navigation ul {
-  display: none;
+  display: inline;
   list-style: none;
   margin: 0;
   padding-left: 0; }
 
 .main-navigation li {
-  float: left;
+  text-align: center;
   position: relative;
-  padding-right: 65px; }
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block; }
 
 .main-navigation a {
   display: block;

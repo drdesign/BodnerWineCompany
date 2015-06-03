@@ -5,6 +5,15 @@
  * @package bodnerWineCompany-05-26-15
  */
 
+//adjust height when logged into wordpress
+add_action('get_header', 'my_filter_head');
+
+function my_filter_head() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
+add_action('wp_head', 'my_admin_css');
+
 if ( ! function_exists( 'bodnerwinecompany_05_26_15_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
