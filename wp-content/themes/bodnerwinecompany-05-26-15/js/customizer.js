@@ -33,4 +33,12 @@
 			}
 		} );
 	} );
+
+function addCheckerFun(){
+	var addChecker = $('#checkboxG2').addClass('css-label radgroup1');
+	return addChecker
+}	
+
+
+
 } )( jQuery );

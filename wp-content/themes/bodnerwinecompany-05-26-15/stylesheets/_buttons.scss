@@ -1,0 +1,18 @@
+.content-button, 
+.content-button:active, 
+.content-button:focus {
+	border: 5px solid $primary-green;
+	height: 50px;
+	width: 125px;
+	padding: 10px 5px 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	line-height: -2em;
+	float: right;
+}
+
+
+.content-button:hover  {
+	border: 5px solid darken($primary-green, 15%);
+	background-color: rgba($primary-green, .25);
+}

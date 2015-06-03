@@ -16,15 +16,6 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <?php wp_head(); ?>
-
- <script>
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 528
-      });
-    });
-  </script>
 </head>
 
 <body <?php body_class(); ?>>

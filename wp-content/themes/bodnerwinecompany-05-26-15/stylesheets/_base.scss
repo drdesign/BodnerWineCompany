@@ -309,6 +309,21 @@ img#hero-frame {
 
 }
 
+/*--------------------------------------------------------------
+# body
+--------------------------------------------------------------*/
+.entry-header {
+	display: none;
+}
+
+.entry-content{
+	margin: 25px 0px 25px 0px;
+}
+
+h2 {
+	color: darken($primary-brown, 35%);
+}
+
 
 /*--------------------------------------------------------------
 # Elements
@@ -746,6 +761,26 @@ a:active {
 	display: inline;
 }
 
+.content-divider {
+	width: 45%;
+	padding-right: 5%;
+	float: right;
+}
+
+.entry-content > h2{
+	color: darken($primary-lightbrown, 40%);
+	text-align: center;
+	padding-bottom: 10px;
+	background: url('img/text-line.png') no-repeat center bottom;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.entry-content > p{
+	color: darken($primary-lightbrown, 50%);
+	margin-top: -9px;
+	font-family: 'Playfair Display', serif;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -755,6 +790,11 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.content {
+margin: 25px 0px 25px;
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------

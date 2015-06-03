@@ -267,6 +267,18 @@ img#hero-frame {
   position: relative; }
 
 /*--------------------------------------------------------------
+# body
+--------------------------------------------------------------*/
+.entry-header {
+  display: none; }
+
+.entry-content {
+  margin: 25px 0px 25px 0px; }
+
+h2 {
+  color: #3e372c; }
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -625,6 +637,23 @@ a:active {
 .group-blog .byline {
   display: inline; }
 
+.content-divider {
+  width: 45%;
+  padding-right: 5%;
+  float: right; }
+
+.entry-content > h2 {
+  color: #7b6136;
+  text-align: center;
+  padding-bottom: 10px;
+  background: url("img/text-line.png") no-repeat center bottom;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.entry-content > p {
+  color: #584526;
+  margin-top: -9px;
+  font-family: 'Playfair Display', serif; }
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -633,6 +662,10 @@ a:active {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.content {
+  margin: 25px 0px 25px;
+  display: inline-block; }
 
 /*--------------------------------------------------------------
 ## Asides
@@ -806,5 +839,112 @@ ins {
 
 big {
   font-size: 125%; }
+
+.content-button,
+.content-button:active,
+.content-button:focus {
+  border: 5px solid #8DCCBF;
+  height: 50px;
+  width: 125px;
+  padding: 10px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  line-height: -2em;
+  float: right; }
+
+.content-button:hover {
+  border: 5px solid #58b4a1;
+  background-color: rgba(141, 204, 191, 0.25); }
+
+input[type="text"],
+input[type="email"] {
+  background-color: #ffffff;
+  border: 4px solid #8DCCBF;
+  color: #337366;
+  width: 50%; }
+
+textarea {
+  background-color: #ffffff;
+  border: 4px solid #8DCCBF;
+  width: 50%; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #337366;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border: 4px solid #337366; }
+
+input[type="checkbox"].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+input[type="checkbox"].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
+  padding-left: 30px;
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 25px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+input[type="checkbox"].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
+  background-position: 0 -25px; }
+
+label.css-label {
+  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_ce8a731c3fb73f667ec33e07927de3ee.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.wpcf7-form > p {
+  font-family: 'Playfair Display', serif;
+  color: #337366;
+  font-size: 18px; }
+
+.form-wrapper-checkbox {
+  width: 50%;
+  display: inline-block; }
+
+.form-divider {
+  width: 50%;
+  float: left;
+  padding-right: 10px; }
+
+.wpcf7-list-item > label {
+  float: left;
+  display: inline-block;
+  width: 100%; }
+
+.form-divider > p {
+  color: #8DCCBF;
+  margin: 0px 0px 0px 0px;
+  padding: -5px 0px -5px 0px; }
+
+.options {
+  color: #337366 !important;
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
