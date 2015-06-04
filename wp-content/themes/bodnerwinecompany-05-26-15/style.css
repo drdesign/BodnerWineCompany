@@ -269,9 +269,6 @@ img#hero-frame {
 /*--------------------------------------------------------------
 # body
 --------------------------------------------------------------*/
-.entry-header {
-  display: none; }
-
 .entry-content {
   margin: 25px 0px 25px 0px; }
 
@@ -637,22 +634,60 @@ a:active {
 .group-blog .byline {
   display: inline; }
 
-.content-divider {
-  width: 45%;
-  padding-right: 5%;
+.content-divider-right {
+  width: 58%;
+  padding-left: 2%;
   float: right; }
 
-.entry-content > h2 {
+.content-divider-left {
+  width: 38%;
+  padding-right: 2%;
+  float: left; }
+
+.entry-content h2 {
   color: #7b6136;
   text-align: center;
   padding-bottom: 10px;
   background: url("img/text-line.png") no-repeat center bottom;
   font-family: 'Josefin Sans', sans-serif; }
 
-.entry-content > p {
+.entry-content h3 {
+  margin: 5px 0px 10px 0px;
+  color: #7b6136; }
+
+.entry-content a {
+  margin-bottom: 5px;
+  padding-bottom: 10px; }
+
+.entry-content p {
   color: #584526;
   margin-top: -9px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-family: 'Playfair Display', serif; }
+
+#blog-snippet-front {
+  margin: -12px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
+  float: right;
+  display: block;
+  width: 275px; }
+
+#blog-snippet-front > a {
+  height: 35px;
+  width: 125px;
+  text-align: center;
+  text-decoration: none;
+  line-height: -2em;
+  float: right;
+  margin-top: -15px; }
+
+.thumbnail-snippet img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  display: inline-block;
+  margin: 0px 0px 53px 0px; }
 
 .page-content,
 .entry-content,
@@ -883,41 +918,6 @@ input[type="text"]:hover,
 input[type="email"]:hover,
 textarea:hover {
   border: 4px solid #337366; }
-
-input[type="checkbox"].css-checkbox {
-  position: absolute;
-  z-index: -1000;
-  left: -1000px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0; }
-
-input[type="checkbox"].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
-  padding-left: 30px;
-  height: 25px;
-  display: inline-block;
-  line-height: 25px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 25px;
-  vertical-align: middle;
-  cursor: pointer; }
-
-input[type="checkbox"].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
-  background-position: 0 -25px; }
-
-label.css-label {
-  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_ce8a731c3fb73f667ec33e07927de3ee.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
 
 .wpcf7-form > p {
   font-family: 'Playfair Display', serif;

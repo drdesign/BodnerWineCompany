@@ -5,6 +5,10 @@
  * @package bodnerWineCompany-05-26-15
  */
 
+
+
+
+
 //adjust height when logged into wordpress
 add_action('get_header', 'my_filter_head');
 
@@ -133,6 +137,18 @@ function bodnerwinecompany_05_26_15_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bodnerwinecompany_05_26_15_scripts' );
+
+
+//adjust length of the excert function
+function custom_excerpt_length( $length ) {
+	return 15;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+//Add featured image to posts
+add_theme_support( 'post-thumbnails' );
+
 
 /**
  * Implement the Custom Header feature.

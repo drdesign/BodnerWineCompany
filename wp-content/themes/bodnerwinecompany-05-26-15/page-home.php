@@ -23,7 +23,7 @@ get_header(); ?>
 			<!-- <div class="container">
 					<div class="wrapper"> -->
 						<div class="content">
-							<div class="content-divider">
+							<div class="content-divider-right">
 
 								<?php /* Start the Loop */ ?>
 								<?php while ( have_posts() ) : the_post(); ?>
@@ -57,7 +57,35 @@ get_header(); ?>
 			<?php endif; ?>
 
 			
-					</div><!--content-divider-->
+					</div><!--content-divider-right-->
+
+						<?php $snippets = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 2, 'paged' => get_query_var('paged') ) );
+							
+							if( $snippets->have_posts() ) : while( $snippets->have_posts() ) : $snippets->the_post(); ?>
+
+								<?php endwhile; endif; wp_reset_postdata(); ?>
+
+					<div class="content-divider-left">
+
+						<div class="entry-content">
+							<h2><?php single_post_title( 'From Our Blog: ' ); ?></h2>
+								<?php $my_query = "showposts=2"; $my_query = new WP_Query($my_query); ?>
+									<?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+										<!-- standard tags to display blog post information like the_title() here -->
+										<div class="thumbnail-snippet">
+											<?php the_post_thumbnail(); ?>
+										</div>	
+
+										<div id="blog-snippet-front"> 
+											<?php the_title( '<h3>', '</h3>' ); ?>
+											<?php the_excerpt(); ?>
+				 							<?php the_shortlink(__('Read More...')); ?>
+			 							</div>
+									<?php endwhile; // end of one post ?>
+								<?php endif; //end of loop ?>
+						</div><!--entry-content-->
+					</div>	<!--content-divider-left-->
 				</div><!--content-->
 			</main><!-- #main -->
 		</div><!-- #primary -->
